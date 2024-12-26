@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="headlogo">WEATHER APP</div>
+        <nav>
+            <a href="#">About</a>
+            <a href="#">How to Use?</a>
+
+            <div class="dropdown">
+                <a href="#">Popular Cities</a>
+                <div class="dropdown-menu">
+                    <a href="#">New York</a>
+                    <a href="#">New Delhi</a>
+                    <a href="#">Mumbai</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Your city.." spellcheck="false">
+            <button><img src="images/search.png"></button>
+        </div>
+        <div class="error">
+            Invalid City Name
+        </div>
+
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">Mumbai</h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">6 km/h</p>
+                        <p>Wind</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
